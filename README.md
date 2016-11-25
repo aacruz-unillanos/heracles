@@ -7,3 +7,4 @@ DREAM consiste en el desarrollo de recursos educativos de distinto tipo para la 
 ## Tutoriales
 * Versión en Español del Tutorial HelloKitty de MIT App Inventor 2, dirigida a estudiantes entre noveno y once: [PDF]() [Word]()
 * Pagina Web en Español con una versión del Tutorial HelloKitty de MIT App Inventor 2, dirigida a estudiantes entre sexto y octavo: [HolaGatito](https://htmlpreview.github.io/?https://raw.githubusercontent.com/aacruz-unillanos/heracles/master/HolaGatito.htm) 
+* Pagina Web en Español del Tutorial mSuelo (mSoil) , dirigida a estudiantes entre septimo en adelante para el desarrollo de una aplicación móvil en MIT App Inventor 2 para la toma de mediciones de temperatura y pH del suelo a distintas profundidades con información georeferenciada del GPS del mismo dispositivo móvil: [mSuelo](https://htmlpreview.github.io/?https://raw.githubusercontent.com/aacruz-unillanos/heracles/master/mSuelo.htm) 
