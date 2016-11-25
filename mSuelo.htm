@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-us"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>DREAM - Desarrollo de Recursos Educativos para Aplicaciones
+Móviles by aacruz-unillanos</title>
+
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="stylesheet" type="text/css" href="./mSuelo_files/normalize.css" media="screen">
+
+  
+  <link href="./mSuelo_files/css" rel="stylesheet" type="text/css">
+
+  
+  <link rel="stylesheet" type="text/css" href="./mSuelo_files/stylesheet.css" media="screen">
+
+  
+  <link rel="stylesheet" type="text/css" href="./mSuelo_files/github-light.css" media="screen">
+
+  
+  <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+  
+  <style type="text/css"></style>
+</head><body>
+<section class="page-header"> </section>
+<h1 class="project-name">Aplicación móvil para medir la temperatura y
+el pH del Suelo: mSuelo</h1>
+
+<h2 class="project-tagline">Recursos educativos para crear aplicaciones
+móviles con MIT App Inventor 2 del Grupo HERACLES-Unillanos
+(Herramientas Educativas para la apropiación de conocimientos en
+Ciencias Naturales y Exactas)</h2>
+
+<section class="main-content"></section>
+<p>Antes de empezar debemos descargar dos archivos de Internet:</p>
+
+<b>Imagen del logo de la aplicación:</b> <a href="http://appinventor.mit.edu/explore/sites/all/files/ai2tutorials/helloPurr/kitty.png" target="_blank">soil.png</a> <br>
+
+Aparecera una imagen como la de abajo, sobre la imagen debe
+darle click derecho y salvar.
+<center> <img style="width: 333px; height: 333px;" src="./mSuelo_files/soil.png" alt="12f" hspace="3" vspace="3"> </center>
+
+<h3><a id="heracles" class="anchor" href="http://aacruz-unillanos.github.io/heracles/#heracles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. Entrar al editor de MIT App
+Inventor 2</h3>
+
+<p>Primero ingrese a la pagina del editor de MIT App Inventor 2 dando
+click al siguiente enlace:</p>
+
+<center> <a href="https://ai2.appinventor.mit.edu" target="_blank">https://ai2.appinventor.mit.edu</a>
+</center>
+
+<br>
+
+<p>Debe abrirse una pagina como esta:</p>
+
+<center> <img src="./mSuelo_files/googlelogin.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>Si tiene una cuenta en Gmail ingrese su usuario y clave, de lo
+contrario ingrese la que le dio su profesor. Por ejemplo:</p>
+
+<center> <b>Usuario:</b> eifa.est1@gmail.com<br>
+<b>Clave:</b> franciscoarango <img src="./mSuelo_files/googlesignin.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>Luego aparecerá una pagina a la cual le daremos clic en el Botón
+Azul <b>Done</b>.</p>
+
+<center> <img src="./mSuelo_files/googleverify.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>Nos preguntará luego si queremos permitir que MIT AppInventor 2
+tenga permisos a la cuenta de Google que hemos ingresado. Le damos clic
+en el Botón <b>Allow</b>, que significa <b>Permitir</b> en inglés.</p>
+
+<center> <img src="./mSuelo_files/googleauthorize.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>Luego nos aparece una pagina preguntando si aceptamos los términos
+de uso de MIT AppInventor 2. Damos clic en el botón <b>I accept the
+terms of service</b>.</p>
+
+<center> <img src="./mSuelo_files/ai2_acceptterms.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>Ahora por primera vez ingresamos a la pagina de MIT App Inventor 2,
+donde nos aparecerá un mensaje de bienvenida. Le damos clic al botón <b>Never
+Take Survey</b>.</p>
+
+<center> <img src="./mSuelo_files/ai2_step1.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>Luego otro mensaje de bienvenida aparecerá, al cual le damos clic al
+botón de verificación <b>Do Not Show Again</b> y luego le damos clic
+al botón <b>Continue</b>.</p>
+
+<center> <img src="./mSuelo_files/ai2_step2.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>Cuando hemos ingresado lo primero que haremos es modificar el idioma
+de la interfaz cambiando el idioma <b>English</b> por <b>Español</b>.</p>
+
+<center> <img src="./mSuelo_files/ai2_step3.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>Ahora ya hemos ingresado finalmente a la pagina de MIT App Inventor
+2 con un mensaje de bienvenida.</p>
+
+<center> <img src="./mSuelo_files/ai2_step4.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<h3>
+<a id="mit-app-inventor-2" class="anchor" href="http://aacruz-unillanos.github.io/heracles/#mit-app-inventor-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Creando un proyecto</h3>
+
+<p>Una vez hemos ingresado damos clic en el botón <b>Comenzar un
+proyecto nuevo</b>.</p>
+
+<center> <img src="./mSuelo_files/ai2_step5.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>Le damos un nombre al proyecto como <b>mSuelo</b> y luego damos
+clic en el botón <b>Aceptar</b>.</p>
+
+<center>
+<center> <img style="width: 1323px; height: 917px;" src="mSuelo_files/ai2_step6.png" alt="Google Login" hspace="3" vspace="3"> </center>
+</center>
+
+<h3>
+<a id="mit-app-inventor-2" class="anchor" href="http://aacruz-unillanos.github.io/heracles/#mit-app-inventor-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Diseñando la aplicación
+móvil con el <b>Diseñador</b></h3>
+
+<p>Despues de haber creado nuestro proyecto <b>mSuelo</b>, nos
+aparecera una pantalla como la siguiente:</p>
+
+<center>
+<center> <img style="width: 1323px; height: 917px;" src="mSuelo_files/ai2_step7.png" alt="Google Login" hspace="3" vspace="3"> </center>
+</center>
+
+<p>Para diseñar la aplicación, vamos a arrastrar un cada uno de los
+controles de la <span style="font-weight: bold;">Interfaz de Usuario </span>de
+la <span style="font-weight: bold;">Disposición</span>, <span style="font-weight: bold;">Almacenamiento</span>, <span style="font-weight: bold;">Conectividad</span> hasta la pantalla del <b>Visor</b>
+de la pantalla del celular tal como aparece en las siguientes imágenes:</p>
+
+<center> xxx<br>
+</center>
+
+<br>
+
+<h3><a id="programando-bloques" class="anchor" href="http://aacruz-unillanos.github.io/heracles/#programando-bloques" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. Programando la aplicación
+móvil con el editor de <b>Bloques</b></h3>
+
+<p>Ahora que tenemos lista la interfaz, vamos al editor de <b>Bloques</b>,
+tal como se muestra en la siguiente imagen.</p>
+
+<center>
+<center> <img style="width: 1392px; height: 885px;" src="mSuelo_files/ai2_step11a.png" alt="Google Login" hspace="3" vspace="3"> </center>
+</center>
+
+<p>Notara que ahora la pantalla cambio la apariencia por la del editor
+de <b>Bloques</b>:</p>
+
+<center> <img style="width: 1392px; height: 885px;" src="./mSuelo_files/ai2_step11b.png" alt="Google Login" hspace="3" vspace="3"> </center>
+
+<p>En el panel izquierdo de <b>Bloques</b> tomamos cada uno de los
+bloques <span style="font-weight: bold;">Integrados </span>o de los
+controles para realizar la programación de la aplicación por bloques.
+Para ello, iniciamos con el primer bloque con la creación de una lista
+donde se guardarán los identificadores de cada muestra. El siguiente
+bloque es usado para programar si se usará el ingreso manual o por GPS
+de la ubicación (longitud y latitud) donde se tomará la medida. En el
+tercer bloque se programa la visualización de las coordenadas de
+ubicación del GPS (longitud y latitud) a partir del sensor del celular:<br>
+</p>
+
+
+
+<center> <img style="width: 1323px; height: 885px;" src="./mSuelo_files/ai2_step11c.png" alt="11c" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 566px; height: 516px;" src="./mSuelo_files/ai2_step11d.png" alt="11d" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 478px; height: 133px;" src="./mSuelo_files/ai2_step11e.png" alt="11e" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 883px; height: 519px;" src="./mSuelo_files/ai2_step11f.png" alt="11f" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 515px; height: 457px;" src="./mSuelo_files/ai2_step11g.png" alt="11g" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 605px; height: 427px;" src="./mSuelo_files/ai2_step11h.png" alt="11h" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 482px; height: 334px;" src="./mSuelo_files/ai2_step11i.png" alt="11i" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 454px; height: 174px;" src="./mSuelo_files/ai2_step11j.png" alt="11j" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 431px; height: 542px;" src="./mSuelo_files/ai2_step11k.png" alt="11k" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 602px; height: 168px;" src="./mSuelo_files/ai2_step11l.png" alt="11l" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 286px; height: 32px;" src="./mSuelo_files/ai2_step11m.png" alt="11m" hspace="3" vspace="3"> </center>
+
+<center> <img style="width: 642px; height: 517px;" src="./mSuelo_files/ai2_step11n.png" alt="11n" hspace="3" vspace="3"> </center>
+
+
+
+<p>De esta forma su pantalla debe verse de la siguiente forma:</p>
+
+<center> xxx<br>
+</center>
+
+<p>Luego le damos un clic al control <b>Sonido1</b> y luego aparecerá
+una serie de bloques de colores y le damos clic al segundo bloque
+purpura para llamar a Sonido1 y luego reproducir el sonido.</p>
+
+<center> xxxx<br>
+</center>
+
+<p>Con el bloque purpura agregado debe darle clic y arrastrarlo para
+que encaje en el hueco del bloque de color mostaza a lo cual debe hacer
+un sonido.</p>
+
+<center> xxxx<br>
+</center>
+
+<p>De esta forma la aplicación ya reproduce el sonido del maullido de
+un gato al darle click al botón con la imagen el gatito.</p>
+
+<br>
+
+<br>
+
+<p>Para incluir que también vibre el celular, nuevamente damos clic en
+el botón <b>Sonido1</b> del panel izquierdo.</p>
+
+<center> xxxx<br>
+</center>
+
+<p>Aparecerá nuevamente varios bloques de colores y le damos clic al
+bloque purpura más grande para que al llamar al Sonido1 vibre el
+celular por unos milisegundos.</p>
+
+<center> xxxxx<br>
+</center>
+
+<p>Al bloque le damos clic y lo arrastramos para que encaje debajo del
+otro bloque purpura.</p>
+
+<center> xxxx<br>
+</center>
+
+<p>Para indicar cuanto tiempo debe vibrar el celular debemos
+seleccionar del panel izquierdo el cuadro azul <b>Matemáticas</b> y
+seleccionar el primer bloque azul con un numero cero.</p>
+
+<center> xxxx<br>
+</center>
+
+<p>Luego debe encajar el bloque azul al lado derecho del bloque purpura
+más grande como se ve en la pantalla:</p>
+
+<center> xxxx<br>
+</center>
+
+<p>Finalmente debe darle doble clic sobre el cero y cambiar por 500,
+para que la vibración dure 500 milisegundos, es decir, medio segundo.</p>
+
+<center> xxxx<br>
+</center>
+
+<h3>
+<a id="probando-aplicacion" class="anchor" href="http://aacruz-unillanos.github.io/heracles/#probando-aplicacion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. Probando la aplicación móvil</h3>
+
+<p>Para probar la aplicación móvil, en el menú superior damos clic en <b>Conectar</b>
+y luego en <b>AI Companion</b>:</p>
+
+<center> <img style="width: 1392px; height: 885px;" src="./mSuelo_files/ai2_step14.png" alt="12f" hspace="3" vspace="3"> </center>
+
+<p>Esto hará aparecer una ventana con un Código QR (el cuadrado con
+patrones blancos y negros), y el código de seis letras para ser
+ingresados en el celular:</p>
+
+<center> <img style="width: 1392px; height: 885px;" src="./mSuelo_files/ai2_step14b.png" alt="12f" hspace="3" vspace="3"> </center>
+
+<p>En el celular, tablet o dispositivo móvil debe darle clic a la
+aplicación MIT App Inventor 2 Companion y digitar el código de seis
+caracteres (cick en el botón naranja) o escanear el código QR (clic en
+el código azul):</p>
+
+<center> <img style="width: 226px; height: 301px;" src="mSuelo_files/ai2_step15a.png" alt="12f" hspace="3" vspace="3"> </center>
+
+<center> <img src="./mSuelo_files/ai2_step15.png" alt="12f" hspace="3" vspace="3"> </center>
+
+<p>De esta forma, podrá probar en su dispositivo móvil la aplicación <b>mSuelo</b>
+dandole clic al logo de la aplicación:<br>
+</p>
+
+<center> <img style="width: 310px; height: 551px;" src="./mSuelo_files/ai2_step15b.png" alt="12f" hspace="3" vspace="3"><br>
+<center> <img style="width: 310px; height: 551px;" src="mSuelo_files/ai2_step16.png" alt="12f" hspace="3" vspace="3"> </center>
+<br>
+<center> <img style="width: 310px; height: 551px;" src="mSuelo_files/ai2_step16b.png" alt="12f" hspace="3" vspace="3"> </center>
+<center> <img style="width: 310px; height: 551px;" src="mSuelo_files/ai2_step16c.png" alt="12f" hspace="3" vspace="3"><br>
+<center> <img style="width: 310px; height: 551px;" src="mSuelo_files/ai2_step16d.png" alt="12f" hspace="3" vspace="3"> </center>
+<br>
+</center>
+</center>
+
+<center> <br>
+</center>
+
+<br>
+
+<center> <img src="./mSuelo_files/fin.jpg" alt="FIN" hspace="3" vspace="3"> </center>
+
+<h3><a id="autores-y-colaboradores" class="anchor" href="http://aacruz-unillanos.github.io/heracles/#autores-y-colaboradores" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Autores y Colaboradores</h3>
+
+<p>Este tutorial fue desarrollado por <a href="https://sites.google.com/site/aacruzr">Angel Cruz-Roa</a> (<a href="https://github.com/aacruz-unillanos" class="user-mention">@aacruz-unillanos</a>)
+como parte del proyecto <i>Reconocimiento del entorno por parte de los
+estudiantes de la IE Francisco Arango, desde las Ciencias Naturales y
+Exactas: Caso Granja Mesetas (2016)</i> del Grupo de Proyección Social
+HERACLES (Herramientas Educativas para la apropiación de conocimientos
+en Ciencias Naturales y Exactas) financiados por la Universidad de los
+Llanos. Los recursos desarrollados estan siendo aplicados con el apoyo
+y colaboración de la Institución Educativa Francisco Arango, su Rector
+Otto Gómez y la Profesora de Informática y Tecnología Ing. Deisy
+Rincón. </p>
+
+<h3>
+<a id="soporte-o-contacto" class="anchor" href="http://aacruz-unillanos.github.io/heracles/#soporte-o-contacto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Soporte o Contacto</h3>
+
+<p>Ante cualquier duda al respecto, no dude en contactar directamente
+al correo: <a href="mailto:aacruz@unillanos.edu.co">aacruz@unillanos.edu.co</a>.</p>
+
+<footer class="site-footer"> <span class="site-footer-owner"><a href="https://github.com/aacruz-unillanos/heracles">DREAM - Desarrollo
+de Recursos Educativos para Aplicaciones Móviles</a> es mantenida por <a href="https://github.com/aacruz-unillanos">aacruz-unillanos</a>.</span>
+<span class="site-footer-credits">Esta pagina fue diseñada usando la
+plantilla <a href="https://github.com/jasonlong/cayman-theme">Cayman
+theme</a> de <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+</footer>
+</body></html>
